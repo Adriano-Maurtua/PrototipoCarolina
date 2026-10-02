@@ -1,0 +1,63 @@
+:root {
+  --background: #f7f6f3;
+  --foreground: #262522;
+  --card: #ffffff;
+  --card-foreground: #262824;
+  --popover: #ffffff;
+  --popover-foreground: #262824;
+  --primary: #242422;
+  --primary-foreground: #ffffff;
+  --secondary: #efede8;
+  --secondary-foreground: #504b43;
+  --muted: #f4f2ee;
+  --muted-foreground: #77726b;
+  --accent: #f0ece3;
+  --accent-foreground: #897250;
+  --destructive: #a34e43;
+  --border: #e8e5df;
+  --input: #e1ddd5;
+  --ring: #a28a63;
+  --radius: 0.75rem;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #262824;
+  --sidebar-primary: #292b26;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #efede8;
+  --sidebar-accent-foreground: #262824;
+  --sidebar-border: #e8e5df;
+  --sidebar-ring: #a28a63;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --font-sans: 'DM Sans', sans-serif;
+  --font-serif: 'Cormorant Garamond', serif;
+}
+
+@layer base {
+  body { font-family: var(--font-sans); background: var(--background); color: var(--foreground); }
+  button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+  button:not(:disabled), select { cursor: pointer; }
+  button, a, input, select, textarea { outline-color: var(--ring); outline-offset: 4px; }
+  ::selection { background: #e8ddca; }
+}
